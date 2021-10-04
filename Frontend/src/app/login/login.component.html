@@ -1,0 +1,38 @@
+<div fxLayoutAlign = "center center" fxFlexFill class="main-div"> 
+    <mat-card fxflex="25">
+        <mat-toolbar color="primary">CONNEXION</mat-toolbar>
+        <form fxLayoutAlign="stretch" fxLayout="column" class="login-form" [formGroup]="formGroup" ngSubmit="loginProces()">
+            <mat-form-field >
+                <input matInput placeholder="Username" formControlName="email">
+            </mat-form-field>
+
+            <mat-form-field >
+                <textarea matInput type="password" placeholder="Password" formControlName="password"></textarea>
+            </mat-form-field>
+            <button mat-raised-button type="submit">Login</button>
+        </form>
+    </mat-card>
+</div>
+
+<!-- <div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+
+    <mat-card class="box">
+      <mat-card-header>
+        <mat-card-title>Log in</mat-card-title>
+      </mat-card-header>
+  
+      <form class="example-form">
+        <mat-card-content>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Email">
+          </mat-form-field>
+  
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Password">
+          </mat-form-field>
+        </mat-card-content>
+        <button mat-stroked-button color="accent" class="btn-block">Log in</button>
+      </form>
+    </mat-card>
+  
+  </div> -->
